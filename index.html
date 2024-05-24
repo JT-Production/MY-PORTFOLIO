@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joeii-Technologies</title>
+
+    <!--
+      Bootstrap Link
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- 
+      google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- 
+      custom css link
+    -->
+     <link rel="stylesheet" href="style.css">
+
+    <!--
+      3D link
+    -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+    <!--
+      Icon Link
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!--
+      AOS Animation css link
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <!--================lodder===================-->
+  <div class="loader-wrapper">
+      <span class="loader" role="status"></span>
+  </div>
+
+
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark   data-aos="fade-down " aria-label="Eighth navbar example">
+        <div class="container">
+          <a class="navbar-brand " href="#"><img src="Assets/logos/Logo1.png" alt="Brand-logo" class="custom-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse " id="navbarsExample07">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-underline ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#">Contact</a>
+              </li>
+              
+            </ul>
+            <div class="">
+                <button class="ms-lg-3 custom-btn">Hire Me</button>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+
+
+
+      <!--Heros-->
+
+    <section id="hero">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <center><model-viewer src="Assets/3D/My avatar Andriod.glb" ios-src="Assets/3D/My avatar IOS.usdz"  rotation-per-second="30deg"
+                shadow-intensity="1" camera-controls auto-rotate>
+            </div>
+          <div class="col-lg-6 hero">
+            <h1 class="display-5 fw-bold text-white lh-1 mb-3 heading1">Godfrey <br> Joseph</h1>
+            <h3 class="heading3">UI/UX & Frontend Developer</h3>
+            <p class="paragraph">the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="">
+                    <button class=" custom-btn w-50">Hire Me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!--About me-->
+
+    <div class="container py-5">
+        <div class="about-me p-5">
+            <div class="">
+                <h1 class="heading-title fw-bold ">About Me</h1>
+                <p class="paragraph">
+                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. 
+                    I enjoy turning complex problems into simple, beautiful and intuitive designs. <br> <br>
+                    My job is to build your website so that it is functional and user-friendly but at the same time attractive. 
+                    Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. 
+                    My aim is to bring across your message and identity in the most creative way. 
+                    I created web design for many famous brand companies.</p>
+            </div>
+
+            <!--What i'm doing-->
+
+            <div class="jobs py-5">
+                <h1 class="heading4 fw-bold ">What I'm doing</h1>
+                <div class="row mb-3 text-center py-2 justify-content-between g-5 ">
+
+                    <!--1================-->
+                    <div class="col-md-6 ">
+                        <div class="job-tits text-white d-flex py-3 px-3">
+                            <div class="job-icon"><img src="Assets\icons\icon-design.svg" alt=""></div>
+                            <div class="ms-3">
+                                <h1 class="heading4 fw-bold text-start">Web Design</h1>
+                                <p class="paragraph text-start ">The most modern and high-quality <br> design made at a professional level.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--2================-->
+                    <div class="col-md-6 ">
+                        <div class="job-tits text-white d-flex py-3 px-3">
+                            <div class="job-icon"><img src="Assets\icons\icon-dev.svg" alt=""></div>
+                            <div class="ms-3">
+                                <h1 class="heading4 fw-bold text-start">Web Development</h1>
+                                <p class="paragraph text-start "> High-quality development of sites <br> at the professional level.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3=================-->
+                    <div class="col-md-6 ">
+                        <div class="job-tits text-white d-flex py-3 px-3">
+                            <div class="job-icon"><img src="Assets\icons\icon-app.svg" alt=""></div>
+                            <div class="ms-3">
+                                <h1 class="heading4 fw-bold text-start">Mobile Apps</h1>
+                                <p class="paragraph text-start ">Professional development of applications <br>  for iOS and Android.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--4=================-->
+                    <div class="col-md-6  ">
+                        <div class="job-tits text-white d-flex py-3 px-3">
+                            <div class="job-icon"><img src="Assets\icons\icon-photo.svg" alt=""></div>
+                            <div class="ms-3">
+                                <h1 class="heading4 fw-bold text-start">Web Design</h1>
+                                <p class="paragraph text-start ">The most modern and high-quality design <br> made at a professional level.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+            
+                </div><!--Row-->
+            </div><!--Jobs-->
+
+
+  <!--======================================================Testimonials=======================================-->
+  <h1 class="heading4 fw-bold ">Testimonials</h1>
+            <div class="container">
+              
+              <div class="slider-wrapper">
+                <button id="prev-slide" class="slide-button material-symbols-rounded">
+                  <i class="fa-solid fa-chevron-left "></i>
+                </button>
+                <ul class="image-list">
+                
+                  
+                    <div class="image-item job-tits p-2">
+                      <div class="d-flex align-items-end  ">
+                          <div class="avatar job-tits ">
+                            <img src="Assets/icons/avatar-1.png" alt="avatar-1" class="">
+                          </div>
+                        <h1 class="heading4 fw-bold ms-3">Daniel Lewis</h1>
+                      </div>
+                      <img src="Assets/icons/icon-quote.svg" alt="icon-quote" class="p-3">
+                      <p class="paragraph p-2">
+                        Richard was hired to create a corporate identity.
+                        We were very pleased with the work done. 
+                        She has a lot of experience and is very concerned about the needs of client. Lorem
+                      </p>
+                    </div>
+
+                    <div class="image-item job-tits p-3">
+                      <div class="d-flex align-items-end  ">
+                          <div class="avatar job-tits ">
+                            <img src="Assets/icons/avatar-2.png" alt="avatar-1" class="">
+                          </div>
+                        <h1 class="heading4 fw-bold ms-3">Jessica Miller</h1>
+                      </div>
+                      <img src="Assets/icons/icon-quote.svg" alt="icon-quote" class="p-3">
+                      <p class="paragraph p-2">
+                        Richard was hired to create a corporate identity. We were very pleased with the work done.
+                         She has a lot of experience and is very concerned about the needs of client. 
+                      </p>
+                    </div>
+
+                    <div class="image-item job-tits p-3">
+                      <div class="d-flex align-items-end  ">
+                          <div class="avatar job-tits ">
+                            <img src="Assets/icons/avatar-3.png" alt="avatar-1" class="">
+                          </div>
+                        <h1 class="heading4 fw-bold ms-3">Emily Evans</h1>
+                      </div>
+                      <img src="Assets/icons/icon-quote.svg" alt="icon-quote" class="p-3">
+                      <p class="paragraph p-2">
+                        Richard was hired to create a corporate identity. We were very pleased with the work done.
+                         She has a lot of experience and is very concerned about the needs of client.
+                      </p>
+                    </div>
+
+                    <div class="image-item job-tits p-3">
+                      <div class="d-flex align-items-end  ">
+                          <div class="avatar job-tits ">
+                            <img src="Assets/icons/avatar-4.png" alt="avatar-1" class="">
+                          </div>
+                        <h1 class="heading4 fw-bold ms-3">Henry William</h1>
+                      </div>
+                      <img src="Assets/icons/icon-quote.svg" alt="icon-quote" class="p-3">
+                      <p class="paragraph p-2">
+                        Richard was hired to create a corporate identity. We were very pleased with the work done. 
+                        She has a lot of experience and is very concerned about the needs of client. 
+                      </p>
+                    </div>
+
+
+               
+                </ul>
+                <button id="next-slide" class="slide-button  material-symbols-rounded">
+                  <i class="fa-solid fa-chevron-right "></i>
+                </button>
+              </div>
+              <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                  <div class="scrollbar-thumb"></div>
+                </div>
+              </div>
+            </div>
+
+        <!--=========================================PROJECTS DONE=============================-->
+        <div class="d-flex align-content-between text-white py-5">
+          <div class="p-4 bg-dark counter text-center w-50 job-tits">
+            <img src="Assets/images/projects.png" alt="" width="100" height="100">
+            <div class="col" data-target="1000" >0</div>
+           <h5 class="fw-bold heading4 "> Complete Project </h5>
+        
+            
+          </div>
+          <div>&nbsp;</div>
+          <div class="p-4 bg-dark counter text-center w-50 job-tits">
+            <img src="Assets/images/review.png" alt="" width="100" height="100">
+            <div class="col" data-target="2000">0</div>
+           <h5 class="fw-bold heading4"> Client Review </h5>
+          </div>
+      
+
+
+        </div>
+    </div>
+
+
+
+    <!--================================================Resume===================================================-->
+
+
+     <!--
+        - #RESUME
+      -->
+
+     <div class="container py-5">
+
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h1 class="article-title heading-title fw-bold ">Resume</h1>
+        </header>
+
+        <section class="timeline">
+
+          <div class="ms-4 title-wrapper ms-1">
+            <div class="icon-box job-tits p-2 ms-1">
+              <i class="fa-solid fa-book-open icon"></i>
+            </div>
+
+            <h3 class="heading4 fw-bold ">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class=" timeline-item-title paragraph text-white  fw-bold ">CHRIS GATE</h4>
+
+              <span>UI/UX DESIGNING</span>
+
+              <p class="timeline-text ">
+                I learnt researching, designing, prototyping, and testing user interfaces to enhance usability, accessibility, and user satisfaction.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title paragraph text-white  fw-bold ">APTECH OGBA</h4>
+
+              <span>ADVANCE DIPLOMA IN SOFTWARE ENGINEERING</span>
+
+              <p class="timeline-text">
+                I gain knowledge of designing, developing, testing, and maintaining computer systems, ensuring functionality, efficiency, and user satisfaction in applications.
+              </p>
+
+            </li>
+
+            
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper ms-1">
+            <div class="icon-box job-tits ms-4 p-2">
+              <i class="fa-solid fa-book-open icon"></i>
+            </div>
+
+            <h3 class="heading4 fw-bold">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title paragraph text-white  fw-bold ">Web Developer</h4>
+
+              <span>2022</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title paragraph text-white  fw-bold ">UI/UX Designer</h4>
+
+              <span>2023</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title paragraph text-white  fw-bold ">App Developer</h4>
+
+              <span>2024</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill ">
+
+          <h3 class="h3 skills-title heading4 text-white  fw-bold ">My skills</h3>
+
+          <ul class="skills-list content-card job-tits p-4 list-unstyled ">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+     </div>
+
+
+     <!--===========================PORTFOLIO========================================-->
+
+     <section id="portfolio">
+        <div class="container job-tits py-5">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#all">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#uiux">UI/UX Designs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#web">Web Development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#app">App Development</a>
+            </li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="all" class="container tab-pane active"><br>
+              <h3>HOME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="uiux" class="container tab-pane fade"><br>
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="web" class="container tab-pane fade"><br>
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="app" class="container tab-pane fade"><br>
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <!--custom js link-->
+    <script src="script.js"></script>
+    <!--bootstrap js link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <!--AOS Animation js link-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+</body>
+</html>

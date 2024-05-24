@@ -121,10 +121,11 @@ body{
 }
 .loader:before{
   content: '';
-  height: 6px;
+  height: 10px;
   border: 1px solid;
   border-radius: 10px;
   width: 100%;
+  margin-top: 20px;
   position: absolute;
   bottom: 0px;
   background: linear-gradient(var(--purple) 100%, transparent 0) no-repeat;
@@ -139,7 +140,7 @@ body{
     background: hsla(240, 1%, 17%, 0.75);
     backdrop-filter: blur(10px);
     transition: all ease-in-out 0.5s;
-    height: 60px;
+    height: 65px;
   }
   .navbar{
     transition:  0.5s;
@@ -155,8 +156,8 @@ body{
   }
   /* Hero */
   .row div model-viewer {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     display: block;
   }
   .hero h1{

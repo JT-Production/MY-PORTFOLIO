@@ -186,6 +186,12 @@ html{
   transition: .15s;
   z-index: 9999;
    }
+   @media (max-width: 994.9px) {
+    .cursor, .cursor2,.grow {
+      opacity: 0;
+      display: none;
+    }
+  }
 
    .grow{
     transform: translate(-50%, -50%) scale(2.5);
@@ -537,7 +543,7 @@ html{
   display: grid;
   place-items: center;
   color: var(--lightpurple);
-font-size: 25px;
+font-size: 15px;
 }
 
 

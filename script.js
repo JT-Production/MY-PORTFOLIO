@@ -145,3 +145,93 @@ window.addEventListener('load', () =>{
     },1000)
 })
 
+/* Back To Top*/
+let calcStrollValue = () => {
+    let scrollUpTop  = document.getElementById("Top");
+    let UpTopvalue = document.getElementById("Top-value");
+    let pos = document.documentElement.scrollTop;
+    // console.log(pos);
+
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    // console.log(calcHeight);
+
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    // console.log(scrollValue);
+    if (pos > 100) {
+        scrollUpTop.style.display = "grid";
+    } else {
+        scrollUpTop.style.display = "none";
+    }
+
+    scrollUpTop.addEventListener("click" , () => {
+        document.documentElement.scrollTop = 0;
+    });
+
+    scrollUpTop.style.background = `conic-gradient(var(--purple) ${scrollValue}%, var(--darkbg) ${scrollValue}%)`;
+}
+
+window.onscroll = calcStrollValue;
+window.onload = calcStrollValue;
+
+
+
+
+
+
+
+
+
+
+
+
+// Toggle between showing and hiding the sideNav when user clicks on the menu icon/
+
+var cursor = document.querySelector(".cursor");
+var cursor2 = document.querySelector(".cursor2");
+var hoverEffect = document.querySelectorAll(".hover");
+
+
+document.addEventListener("mousemove", function (e) {
+    cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+
+});
+
+hoverEffect.forEach(link => {
+    link.addEventListener('mouseover', () => {
+        cursor.classList.add("grow");
+        cursor2.classList.add("hide");
+    });
+
+    link.addEventListener('mouseleave', () => {
+        cursor.classList.remove("grow");
+        cursor2.classList.remove("hide");
+    });
+
+});
+//*Glow cursor
+const cursorGlow = document.querySelector('.glow');
+document.addEventListener('mousemove', (e) => {
+    cursorGlow.style.left = e.clientX + 'px';
+    cursorGlow.style.top = e.clientY + 'px';
+});
+
+// Add a hover effect to interactive elements 
+const interactiveElements = document.querySelectorAll('.interactive');
+interactiveElements.forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+        cursorGlow.style.width = '100px';
+        cursorGlow.style.height = '100px';
+        cursorGlow.style.webkitFilter = "blur(120px)";
+
+    });
+    element.addEventListener('mouseleave', () => {
+        cursorGlow.style.width = '150px';
+        cursorGlow.style.height = '150px';
+        cursorGlow.style.webkitFilter = "blur(150px)";
+
+    });
+})
+
+
+
+

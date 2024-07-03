@@ -10,6 +10,15 @@ body{
     background-color: var(--darkerbg);
     font-family: 'Poppins';
 }
+/* body.light-mode {
+  background-color: white;
+  color: black ;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white ;
+} */
 html{
   scroll-behavior: smooth;
 }
@@ -94,6 +103,12 @@ html{
   .paragraph{
     font-size: 15px;
     color: rgb(155, 154, 154);
+  }
+  
+  /* icons*/
+
+  .custom-icons:hover i{
+    color: var(--lightpurple) !important;
   }
 /* loader*/
 .loader-wrapper{
@@ -210,10 +225,20 @@ html{
     backdrop-filter: blur(10px);
     transition: all ease-in-out 0.5s;
     height: 65px;
+    
   }
   .navbar{
     transition:  0.5s;
+    
   }
+  @media only screen and (max-width: 1023px) {
+  .navbar{
+    background: hsla(240, 1%, 17%, 0.75);
+    backdrop-filter: blur(10px);
+    height: 70px !important;
+    
+  }
+}
   .navbar-nav .nav-item{
     margin-left: 12px;
     font-size: 15px;
@@ -524,8 +549,8 @@ html{
 #Top{
   /* background-color: var(--darkbg); */
   position: fixed;
-  bottom: 50px;
-  right: 10px;
+  bottom: 100px;
+  right: 28px;
   width: 50px;
   height: 50px;
   display: none;

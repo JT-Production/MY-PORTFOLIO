@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +54,7 @@
 
     <!--navbar-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark   data-aos="fade-down " aria-label="Eighth navbar example">
+    <nav class="navbar navbar-expand-lg navbar-dark  data-aos="fade-down " aria-label="Eighth navbar example">
         <div class="container">
           <a class="navbar-brand " href="#"><img src="Assets/logos/Logo1.png" alt="Brand-logo" class="custom-logo hover"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,25 +67,28 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#aboutme">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link" href="#resume">Resume</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link "  href="#">Portfolio</a>
+                <a class="nav-link "  href="#portfolio">Portfolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link "  href="#">Blog</a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link "  href="#">Contact</a>
               </li>
               
             </ul>
             <div class="">
-                <button class="ms-lg-3 custom-btn">Hire Me</button>
-            </div>
+                <button class="ms-lg-3 bg-transparent border-0 p-2 px-2 hover  custom-icons"><a href="https://www.instagram.com/joeii_tech/"> <i class="fa-brands fa-instagram text-white fs-6"></i></a></button>
+                <button class="ms-lg-3 bg-transparent border-0 p-2 px-2 hover custom-icons" ><a href="https://github.com/JT-Production"> <i class="fa-brands fa-github text-white fs-6"></i> </a>  </button>
+                <button class="ms-lg-3 bg-transparent border-0 p-2 px-2 hover custom-icons" ><a href="https://www.linkedin.com/in/joseph-godfrey-972075267/"> <i class="fa-brands fa-linkedin-in text-white fs-6"></i> </a></button>
+                <button class="ms-lg-3 bg-transparent border-0 p-2 px-2 hover custom-icons" > <a href="https://www.upwork.com/freelancers/~01b2334559ad3a45fc"><i class="fa-brands fa-upwork text-white fs-6"></i>  </a></button>
+                <button class="ms-lg-3 bg-transparent border-0 p-2 px-2 hover custom-icons" > <a href="https://x.com/JoeiiTech"><i class="fa-brands fa-x-twitter text-white fs-6"></i>  </a></button>
+           
+              </div>
             
           </div>
         </div>
@@ -120,8 +123,8 @@
 
     <!--About me-->
 
-    <div class="container py-5">
-        <div class="about-me p-5">
+    <div class="container py-5 mt-5" id="aboutme">
+        <div class="about-me p-5  mt-5">
             <div class="">
                 <h1 class="heading-title fw-bold ">About Me</h1>
                 <p class="paragraph">
@@ -301,10 +304,10 @@
         - #RESUME
       -->
 
-     <div class="container py-5">
+     <div class="container py-5 mt-5 pt-5" id="resume">
 
 
-      <article class="resume" data-page="resume">
+      <article class="resume mt-5 pt-5" data-page="resume">
 
         <header>
           <h1 class="article-title heading-title fw-bold ">Resume</h1>
@@ -476,14 +479,18 @@
 
 
      </div>
-    </div>
+   
 
 
      <!--===========================PORTFOLIO========================================-->
 <div >
-     <section id="portfolio " >
-        <div class="container  py-5 ">
-          <ul class="nav nav-tabs hover" role="tablist">
+     <section id="portfolio" class="mt-5 pt-5">
+      
+        <div class="container  py-2 pt-5 mt-5">
+          <header>
+            <h1 class="article-title heading-title fw-bold ">Portfolio</h1>
+          </header>
+          <ul class="nav nav-tabs hover"  id="nav-tab"  role="tablist">
             <li class="nav-item">
               <a class="nav-link active text-secondary" data-bs-toggle="tab" href="#all">All</a>
             </li>
@@ -499,7 +506,7 @@
           </ul>
         
           <!-- Tab panes -->
-          <div class="tab-content">
+          <div class="tab-content" id="nav-tabContent">
             <div id="all" class="container tab-pane active"><br>
               
              <div class="row">
@@ -882,7 +889,7 @@
           </div>
         
 
-
+    </div><!--ABOUT CONTAINER-->
 
 
 
@@ -908,13 +915,35 @@
 
     <!--custom js link-->
     <script src="script.js"></script>
+   
+   
     <!--bootstrap js link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   <!--AOS Animation js link-->
+   
+    
+    <!--AOS Animation js link-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
+    <!--Momment Caht  js link-->
+    <script src="https://www.momentcrm.com/embed"></script>
+
+   
+    <script>
+
+      MomentCRM('init', {
+        'teamVanityId': 'joeiichat',
+        'doChat': true,
+        'doTimeTravel': true,
+      });
+
+
+      
+
+    </script>
+
     
 </body>
 </html>

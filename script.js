@@ -20,6 +20,7 @@ fixedBlurNav();
 
 
 
+
 /* Textimonial */
 
 const initSlider = () => {

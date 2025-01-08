@@ -9,6 +9,7 @@
 body{
     background-color: var(--darkerbg);
     font-family: 'Poppins';
+    cursor:none;
 }
 /* body.light-mode {
   background-color: white;
@@ -235,7 +236,7 @@ html{
   .navbar{
     background: hsla(240, 1%, 17%, 0.75);
     backdrop-filter: blur(10px);
-    height: 70px !important;
+    height: auto !important;
     
   }
 }
@@ -257,7 +258,25 @@ html{
   .hero h1{
     font-size: 60px !important;
   }
-
+  .avatarr{
+    box-shadow: 0px 0px 20px #c235ff,
+    0px 0px 20px #B30BFC,
+    0px 0px 20px #c85ff5,
+    0px 0px 20px #B30BFC
+    ;
+    animation: float 3s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px); /* Adjust the float height */
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
   /* About me*/
   .about-me{
     background-color: var(--darkbg);
